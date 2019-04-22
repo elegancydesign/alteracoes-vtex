@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+<head>
+    <title>Elegancy Design</title>
+    <vtex:metaTags/>
+    <vtex:template id="commonScripts" />
+    <script src="/arquivos/thickbox.js"></script>
+</head>
+<body>
+	<div class="container">
+		<vtex:template id="Header" />
+		<div id="content" class="row-fluid">
+		    <div class="container-center">
+		        <div id="boxBreadCrumb" class="clearfix">
+                    <vtex.cmc:breadCrumb />
+                </div>
+    			<div class="span6 boxProdLeft">
+    				<div class="thumbnail text-center">
+    				    <vtex.cmc:HightLight/>
+    				    <span><vtex.cmc:discountHightLight/></span>
+    					<vtex.cmc:ProductImage />
+    				</div>
+    				<div class="estrelasAvaliacao"><vtex.cmc:evaluationRate/></div>
+    			</div>
+    			<div class="span6 boxProdRight">
+    				<div class="well">
+    					<div class="pull-left span8">
+    						<h1 class="lead"><vtex.cmc:productName /></h1>
+    						<vtex.cmc:productDescriptionShort />
+    						<div class="skuReferencia"><vtex.cmc:skuReference/></div>
+                            <div class="valorPontos"><vtex.cmc:stockKeepingUnitRewardValue/></div>
+    					</div>
+    					<div id="box-product-infos">
+        					<!--vtex.cmc:SellerOptions /-->
+        					<vtex.cmc:skuPrice />
+        					<div id="BuyButton" class="pull-right span4">
+        						<vtex.cmc:BuyButton/>
+        						<a data-toggle="modal" data-target="#compreJuntoBox" class="linkModalCJ"></a>
+        					<a data-toggle="modal" data-target="#pagamentosBox" class="linkModal">Ver formas de pagamento</a>
+        					</div>
+        					<vtex.cmc:shippingValue/>
+        					<span class="textoDevolucao">Devolução total do dinheiroaté 7 dias após a compra</span>
+        					<vtex.cmc:SalesChannelDropList />
+        					<vtex.cmc:stockKeepingUnitService />
+        					<div class="seletorSku clearfix">
+        						<vtex.cmc:stockKeepingUnitSelection />
+        						<!--vtex.cmc:skuRichSelection changeImage="1" /-->
+        						<!--vtex.cmc:skuSelection /-->
+                				<vtex:contentPlaceHolder id="ColecaoSimilar" />
+        					</div>
+    		            </div>
+    				</div>
+    			</div>
+    			<div class="product-description-main">
+        			<div class="product-description">
+        			    <div class="even"> 
+        				    <span class="title-desc name-field">Descrição</span>
+        				    <div class="value-field"><vtex.cmc:ProductDescription /></div>
+        				</div>
+        				<div class="odd"> 
+        				    <!--span class="title-desc name-field">Características</span-->
+        			        <vtex.cmc:productSpecification />
+                        </div>
+        			</div>
+    			</div>
+    			<div id="boxCompreJunto">
+    			    <vtex.cmc:BuyTogether/>
+    		    </div>
+    			<div class="boxQVVT">
+    				<vtex:contentPlaceHolder id="ColecaoQVVT" />
+    			</div>
+    			<div class="comentariosProd"><vtex.cmc:UserReview/></div>
+    		</div>
+		</div>
+		<vtex:template id="Footer" /> 
+	</div>
+	<div id="pagamentosBox" style="display: none;" class="modal fade" role="dialog" >
+    	<div id="parcelaProd">
+            <span class="close" data-dismiss="modal">Fechar</span>
+    		<vtex.cmc:OtherPaymentMethod/>
+    	</div>
+	</div>
+	<div id="compreJuntoBox" style="display: none;" class="modal fade" role="dialog" >
+    	<div id="compreJuntoBoxMain">
+            <span class="close" data-dismiss="modal">Fechar</span>
+    		<div id="boxCompreJunto">
+			    <vtex.cmc:BuyTogether/>
+		    </div>
+    	</div>
+	</div>
+<script src="/arquivos/vtex-custom-scripts.js"></script>
+<script src="/arquivos/scripts.js"></script>
+<script src="/arquivos/product-scripts.js"></script>
+</body>
+</html>
