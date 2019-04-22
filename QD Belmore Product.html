@@ -39,13 +39,30 @@
 				</ul>
 			</div>
 
-			<div class="col-xs-24 col-sm-10">
+			<div class="col-xs-24 col-sm-12">
 				<div class="row">
 					<!-- productImage -->
 					<div class="product-image col-xs-24">
 						<vtex.cmc:ProductImage zoom="on"/>
 					</div>
 					<!-- productImage -->
+					
+					<!-- Product SKU selection -->
+					<div class="product-qd-v1-sku-selection-row">
+						<div class="row">
+							<div class="col-xs-24">
+								<div class="product-qd-v1-sku-selection-color-similiar">
+									<vtex:contentPlaceHolder id="Seleção de cores por produto similar" />
+								</div>
+					
+								<div class="product-qd-v1-sku-selection">
+									<vtex.cmc:skuSelection />
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Product SKU selection -->
+
 				</div>
 
 				<!-- Conteúdo abaixo da Imagem Principal -->
@@ -112,22 +129,6 @@
 									</div>
 								</div>
 							</div>
-
-							<!-- Product SKU selection -->
-							<div class="product-qd-v1-sku-selection-row">
-								<div class="row">
-									<div class="col-xs-24">
-										<div class="product-qd-v1-sku-selection-color-similiar">
-											<vtex:contentPlaceHolder id="Seleção de cores por produto similar" />
-										</div>
-							
-										<div class="product-qd-v1-sku-selection">
-											<vtex.cmc:skuSelection />
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Product SKU selection -->
 							
 							<div class="row">
 								<div class="col-xs-24">
