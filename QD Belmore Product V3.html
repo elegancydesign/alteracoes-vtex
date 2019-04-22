@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <vtex:contentPlaceHolder id="qd_head_tag" />
+    <vtex:metaTags />
+    <title>
+        <vtex.cmc:productPageTitle />
+    </title>
+    <vtex:template id="qd-belmore-head-tags" />
+    <link rel="stylesheet" href="//cdn.quatrodigital.com/elegancydesign-arquivos/css.ele.bel.product.css" type="text/css" />
+</head>
+
+<body class="home" data-qd-scroll-limit="150">
+    <!-- qd-belmore-header-2 -->
+    <vtex:template id="qd-belmore-header-v2" />
+    <!-- qd-belmore-header-2 -->
+
+    <div class="breadCrumb-full">
+        <div class="container">
+            <div class="row breadCrumb">
+                <div class="col-xs-24">
+                    <vtex.cmc:breadCrumb />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Conteúdo abaixo do Breadcrumb -->
+        <div class="row">
+            <div class="col-xs-24 qd-banner-responsive img-responsive qd-shelf-xs-12 qd-shelf-sm-3">
+                <!-- Conteúdo abaixo do Breadcrumb -->
+                <vtex:contentPlaceHolder id="Conteúdo abaixo do Breadcrumb" />
+                <!-- Conteúdo abaixo do Breadcrumb -->
+            </div>
+        </div>
+        <!-- Conteúdo abaixo do Breadcrumb -->
+
+        <div class="row">
+            <div class="col-xs-24 col-sm-2">
+                <ul class="thumbs product-image-thumbs QD-thumbs img-responsive">
+                </ul>
+            </div>
+
+            <div class="col-xs-24 col-sm-10">
+                <div class="row">
+                    <!-- productImage -->
+                    <div class="product-image col-xs-24">
+                        <vtex.cmc:ProductImage zoom="on" />
+                    </div>
+                    <!-- productImage -->
+                </div>
+
+                <!-- Conteúdo abaixo da Imagem Principal -->
+                <div class="row">
+                    <div class="col-xs-24 qd-banner-responsive img-responsive">
+                        <vtex:contentPlaceHolder id="Conteúdo abaixo da Imagem Principal" />
+                    </div>
+                </div>
+                <!-- Conteúdo abaixo da Imagem Principal -->
+            </div>
+
+            <div class="col-xs-22 col-xs-offset-1 col-sm-12 col-sm-offset-0 sku-selection-box-wrapper">
+                <div class="row">
+                    <div class="col-xs-24">
+                        <div class="sku-selection-box padding-v-sm clearfix">
+                            <!-- Conteúdo acima do Nome do Produto -->
+                            <div class="row">
+                                <div class="col-xs-24 qd-banner-responsive img-responsive">
+                                    <!-- Conteúdo acima do Nome do Produto -->
+                                    <vtex:contentPlaceHolder id="Conteúdo acima do Nome do Produto" />
+                                    <!-- Conteúdo acima do Nome do Produto -->
+                                </div>
+                            </div>
+                            <!-- Conteúdo acima do Nome do Produto -->
+
+                            <div class="row">
+                                <div class="col-xs-24">
+                                    <!-- productName -->
+                                    <h1 class="product-name">
+                                        <vtex.cmc:productName/>
+                                    </h1>
+                                    <!-- productName -->
+
+                                    <div id="yv-review-quickreview"></div>
+                                </div>
+                            </div>
+
+                            <div class="row padding-v-xs">
+                                <div class="col-xs-24">
+                                    <!-- productReference -->
+                                    <div class="product-reference">
+                                        <span>Cód. Ref.</span>
+                                        <vtex.cmc:productReference/>
+                                    </div>
+                                    <!-- productReference -->
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-24">
+                                    <!-- productStamps -->
+                                    <div class="product-stamps discount">
+                                        <vtex.cmc:hightLight/>
+                                        <vtex.cmc:discountHightLight/>
+                                    </div>
+                                    <!-- productStamps -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-24">
+                        <div class="sku-selection-box padding-v-sm clearfix">
+                            <div class="col-md-13">
+                                <div class="row">
+                                    <div class="col-xs-24">
+                                        <div class="product-sku-selection">
+                                            <vtex.cmc:skuRichSelection changeImage="1" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Product SKU selection -->
+                                <div class="product-qd-v1-sku-selection-row">
+                                    <div class="row">
+                                        <div class="col-xs-24">
+                                            <div class="product-qd-v1-sku-selection-color-similiar">
+                                                <vtex:contentPlaceHolder id="Seleção de cores por produto similar" />
+                                            </div>
+
+                                            <div class="product-qd-v1-sku-selection">
+                                                <vtex.cmc:skuSelection />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product SKU selection -->
+                            </div>
+
+                            <div class="col-md-10 col-md-offset-1">
+                                <div class="row">
+                                    <div class="col-xs-24">
+                                        <!-- skuPrice -->
+                                        <div class="product-price">
+                                            <vtex.cmc:skuPrice/>
+                                        </div>
+                                        <!-- skuPrice -->
+                                    </div>
+                                </div>
+
+                                <!-- Conteúdo abaixo do Preço -->
+                                <div class="row">
+                                    <div class="col-xs-24 qd-banner-responsive img-responsive">
+                                        <!-- Conteúdo abaixo do Preço -->
+                                        <vtex:contentPlaceHolder id="Conteúdo abaixo do Preço" />
+                                        <!-- Conteúdo abaixo do Preço -->
+                                    </div>
+                                </div>
+                                <!-- Conteúdo abaixo do Preço -->
+                                <!-- Smart qtt -->
+                                <div class="col-md-24">
+                                    <div class="product-qd-v1-box-quantity product-qd-v1-sku-selection-row">
+                                        <div class="qd-v1-smart-qtt">
+                                            <input class="product-qd-v1-smart-input qd-sq-quantity" type="tel" value="1" />
+
+                                            <div class="btns-wrapper">
+                                                <span class="product-qd-v1-smart-qtt-btn qd-sq-more">
+                                                    <i class="fa fa-plus"></i>
+                                                </span>
+                                                <span class="product-qd-v1-smart-qtt-btn qd-sq-minus">
+                                                    <i class="fa fa-minus"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Smart qtt -->
+                                <div class="row padding-v-xs">
+                                    <div class="col-xs-24">
+                                        <!-- BuyButton -->
+                                        <div id="product-qd-v1-sku-selection-wrapper" class="product-buy-button">
+                                            <vtex.cmc:BuyButton/>
+                                        </div>
+                                        <!-- BuyButton -->
+                                    </div>
+                                </div>
+
+                                <!-- Conteúdo abaixo do Botão Comprar -->
+                                <div class="row">
+                                    <div class="col-xs-24 qd-banner-responsive img-responsive">
+                                        <!-- Conteúdo abaixo do Botão Comprar -->
+                                        <vtex:contentPlaceHolder id="Conteúdo abaixo do Botão Comprar" />
+                                        <!-- Conteúdo abaixo do Botão Comprar -->
+                                    </div>
+                                </div>
+                                <!-- Conteúdo abaixo do Botão Comprar -->
+                                <!-- productStamps -->
+                                <div class="product-stamps hide">
+                                    <vtex.cmc:hightLight/>
+                                </div>
+                                <!-- productStamps -->
+
+                                <div class="col-xs-24">
+                                    <div class="row">
+                                        <!-- ShippingValue -->
+                                        <div class="product-shipping col-xs-24 col-sm-24">
+                                            <div class="row">
+                                                <h4 class="text-uppercase bold padding-b-xs font-size-sm">CALCULAR FRETE</h4>
+                                                <div class="calc-freight-result col-xs-24 col-sm-24">
+                                                    <vtex.cmc:shippingValue/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ShippingValue -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-24">
+                        <div class="sku-selection-box padding-v-sm clearfix">
+                            <div class="product-description-short">
+                                <!-- productStamps -->
+                                <div class="product-stamps">
+                                    <vtex.cmc:hightLight/>
+                                    <vtex.cmc:discountHightLight/>
+                                </div>
+                                <!-- productStamps -->
+
+                                <vtex.cmc:productDescriptionShort />
+
+                                <a href="#" class="btn-see-description">Ver Descrição</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row padding-v-sm">
+            <div class="col-xs-24 col-sm-8">
+                <div class="add-this-wrapper hidden-xs">
+                    <span class="pull-left padding-r-xs">Compartilhe</span>
+                    <div class="add-this"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conteúdo acima da Descrição -->
+        <div class="row">
+            <div class="col-xs-24">
+                <div class="qd-banner-responsive img-responsive qd-shelf-xs-12 qd-shelf-sm-8 qd-shelf-md-6">
+                    <vtex:contentPlaceHolder id="Conteúdo acima da Descrição" />
+                </div>
+            </div>
+        </div>
+        <!-- Conteúdo acima da Descrição -->
+
+        <div class="row">
+            <div class="col-xs-24 col-md-20 col-md-offset-2">
+
+                <div class="row">
+                    <div class="col-xs-24">
+                        <div class="product-qd-buy-together">
+                            <div class="cycle-prev cycle-control cycle-component"></div>
+                            <div class="cycle-next cycle-control cycle-component"></div>
+
+                            <vtex.cmc:BuyTogether/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row padding-b-md">
+                    <div class="col-xs-24">
+                        <div class="product-description">
+                            <h2 class="heading-2"> descrição do produto </h2>
+                            <div>
+                                <vtex.cmc:ProductDescription/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row padding-v-md">
+                    <div class="col-xs-24">
+                        <!-- productSpecification -->
+                        <div class="product-specification">
+                            <h2 class="group Especificacoes">Especificações</h2>
+                            <vtex.cmc:productSpecification/>
+                        </div>
+                        <!-- productSpecification -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Conteúdo abaixo da Descrição -->
+        <div class="row">
+            <div class="col-xs-24 qd-banner-responsive img-responsive qd-shelf-xs-12 qd-shelf-sm-8 qd-shelf-md-6 vtx-placeholder vtx-collections-wrap qd-shelf-carousel">
+                <!-- Conteúdo abaixo da Descrição -->
+                <vtex:contentPlaceHolder id="Conteúdo abaixo da Descrição" />
+                <!-- Conteúdo abaixo da Descrição -->
+            </div>
+        </div>
+        <!-- Conteúdo abaixo da Descrição -->
+
+        <!-- Yourviews Reviews e Q.A -->
+        <div class="yv-box yv-box-review" style="display: none;">
+            <h2 class="yv-title">Avaliações do Produto</h2>
+            <div id="yv-reviews"></div>
+        </div>
+        <div class="yv-box yv-box-qa" style="display: none;">
+            <h2 class="yv-title">Dúvidas dos consumidores</h2>
+            <div class="yv-qa"></div>
+        </div>
+        <!-- Yourviews Reviews e Q.A -->
+    </div>
+
+    <div class="footer-affix">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-24">
+                    <div class="qd-banner-responsive img-responsive qd-shelf-xs-12 qd-shelf-sm-8 qd-shelf-md-6">
+                        <!-- Conteúdo acima do Carrossel -->
+                        <vtex:contentPlaceHolder id="Conteúdo acima do Carrossel" />
+                        <!-- Conteúdo acima do Carrossel -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-24">
+                    <div class="vtx-placeholder vtx-collections-wrap qd-shelf-xs-3 clearfix qd-shelf-carousel">
+                        <!-- Carrossel de Produtos -->
+                        <vtex:contentPlaceHolder id="Carrossel de Produtos" />
+                        <!-- Carrossel de Produtos -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-24">
+                    <div class="qd-porduct-collections-accessories qd-banner-responsive img-responsive qd-shelf-xs-12 qd-shelf-sm-6">
+                        <!-- Conteúdo abaixo do Carrossel -->
+                        <vtex:contentPlaceHolder id="Conteúdo abaixo do Carrossel" />
+                        <!-- Conteúdo abaixo do Carrossel -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="display: none !important;">
+            <!--div class="facebook-comments margin-b-lg padding-b-md"-->
+            <div class="margin-b-lg padding-b-md">
+                <div class="row">
+                    <div class="col-xs-24 col-sm-20 col-sm-offset-2">
+                        <!-- facebookComments -->
+                        <div id="fb-comments-box" class="third-party-component">
+                            <h2 class="heading-2"> Opinião dos Consumidores </h2>
+
+                            <div data-num-posts="4" data-width="100%" class="fb-comments"></div>
+                        </div>
+                        <!-- facebookComments -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-24 qd-banner-responsive img-responsive qd-shelf-xs-12 qd-shelf-sm-8 qd-shelf-md-3">
+                    <!-- Conteúdo acima do Footer -->
+                    <vtex:contentPlaceHolder id="Conteúdo acima do Footer" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Fixed bar -->
+        <div class="product-qd-v1-fixed-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-24">
+                        <!-- Buy button -->
+                        <div class="product-buy-button product-qd-v1-buy-button">
+                            <a href="#product-qd-v1-sku-selection-wrapper" class="buy-button">Comprar</a>
+                        </div>
+                        <!-- Buy button -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Fixed bar -->
+    </div>
+
+    <!-- qd-belmore-footer-2 -->
+    <vtex:template id="qd-belmore-footer-v2" />
+    <!-- qd-belmore-footer-2 -->
+
+    <script type="text/javascript" src="//cdn.quatrodigital.com/elegancydesign-arquivos/JS.jquery.cycle2.min.js"></script>
+    <script type="text/javascript" src="//cdn.quatrodigital.com/elegancydesign-arquivos/JS.jquery.owl.carousel.min.js"></script>
+</body>
+
+</html>
