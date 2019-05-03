@@ -1,0 +1,245 @@
+<div class="store-header-v2" id="header" role="Navigation">
+	<div class="v2-tip-bar-top">
+		<div class="container">
+			<div class="row info-user">
+				<div class="col-xs-24 col-sm-24">
+					<div class="nav-text user-messenger font-size-xs pull-left">
+						<vtex.cmc:welcomeMessage />
+					</div>
+					<div class="pull-right">
+						<a href="/atendimento" title="Precisa de ajuda?" class="hidden-xs hidden-sm">Atendimento</a>
+
+						<a title="Edite as informações da sua Conta" href="/account" class="hidden-xs hidden-sm">Minha Conta</a>
+
+						<a title="Confira os seus pedidos" href="/account/orders" class="hidden-xs hidden-sm">Meus Pedidos</a>
+
+						<span class="store-phone-number hidden-xs" title="Entre em contato com a Hospinet">
+							<i class="fa fa-phone"></i>
+							Atendimento:
+							<vtex.cmc:phoneNumber />
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="v2-header-content">
+		<div class="container">
+			<div class="row margin-b-sm">
+				<div class="col-xs-14 col-sm-4 col-md-4">
+					<div class="v2-nav-logo">
+						<a href="/" title="">
+							<img src="//elegancydesign.vteximg.com.br/arquivos/elegancy-design.png" alt="Elegancy Design" class="img-responsive" />
+						</a>
+					</div>
+				</div>
+
+				<div class="col-xs-10 col-sm-18 visible-xs visible-sm">
+					<div class="row">
+						<div class="col-xs-24">
+							<div class="v2-cart-wrapper qd_cart_auto show-minicart-on-hover tpl-cart tpl-cart-dropdown text-right">
+								<a href="/checkout/#/cart" class="cartLink">
+									<i class="fa fa-shopping-cart"></i>
+
+									<span class="qd_items_text singular" style="display:none;">(
+										<span class="qd_cart_qtt"></span>) Item</span>
+									<span class="qd_items_text plural">(
+										<span class="qd_cart_qtt"></span>) Itens</span>
+									<!-- <span class="qd_cart_total"></span> -->
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-24 col-md-8">
+					<div class="v2-nav-searchbar">
+						<vtex.cmc:fullTextSearchBox/>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-md-12 hidden-xs hidden-sm">
+					<div class="row">
+						<div class="col-md-18">
+							<div class="v2-nav-links-cart">
+								<ul>
+									<li class="col-xs-8 col-sm-8">
+										<span class="orders-link">
+											<i class="fa fa-phone-square"></i><span>Telefone:
+											<br /> (11) 3213-3600</span></span>
+									</li>
+
+									<li class="col-xs-8 col-sm-8">
+										<a href="/institucionais/nossas-lojas" class="orders-link" title="Conheça nossas lojas!">
+											<i class="fa fa-map-marker"></i>Lojas</a>
+									</li>
+
+									<li class="col-xs-8 col-sm-8">
+										<span class="orders-link orders-link-account" title="Acompanhe seus pedidos já realizados">
+											<i class="fa fa-user"></i>Minha conta
+
+											<div class="header-qd-v1-actions-dropdown">
+												<div class="header-qd-v1-actions-dropdown-wrap">
+													<div class="header-qd-v1-user-message">
+														<vtex.cmc:welcomeMessage />
+													</div>
+													<ul class="header-qd-v1-actions-btns">
+														<li class="account-link">
+															<a href="/account">
+																<i class="fa fa-user" aria-hidden="true"></i>
+																Dados Pessoais
+															</a>
+														</li>
+														<li class="orders-link">
+															<a href="/account/orders">
+																<i class="fa fa-list-ul" aria-hidden="true"></i>
+																Meus Pedidos
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="v2-cart-wrapper qd_cart_auto show-minicart-on-hover tpl-cart tpl-cart-dropdown hidden-xs">
+								<a href="/checkout/#/cart" class="cartLink">
+									<i class="fa fa-shopping-cart"></i>
+
+									<span class="qd_items_text singular" style="display:none;">(
+										<span class="qd_cart_qtt"></span>) Item</span>
+									<span class="qd_items_text plural">(
+										<span class="qd_cart_qtt"></span>) Itens</span>
+									<!-- <span class="qd_cart_total"></span> -->
+								</a>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="v2-amazing-menu">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-24">
+					<div class="navbar navbar-default color-white bg-base-color border-radius-xs">
+						<div class="visible-xs-block visible-sm-block padding-xs clearfix v2-responsive-menu-controls">
+							<a class="amazing-menu-toggle header-qd-v1-amazing-menu-trigger pull-left">
+								<i class="fa fa-bars fa-6 color-white font-size-h1"></i>
+								<span>MENU</span>
+							</a>
+						</div>
+
+						<div class="v2-main-amazing-menu hidden-xs hidden-sm">
+							<vtex.cmc:qdAmazingMenu />
+						</div>
+
+						<div class="qd-am-overlay"></div>
+						<div class="components-qd-v1-overlay in modal-backdrop"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-qd-v1-amazing-menu-mobile-wrapper">
+		<div class="row">
+			<div class="col-xs-24">
+				<div class="header-qd-v1-user-message">
+					<vtex.cmc:welcomeMessage />
+				</div>
+
+				<nav>
+					<div class="header-qd-v1-amazing-menu-mobile">
+						<vtex.cmc:qdAmazingMenuMobile />
+					</div>
+
+					<ul class="header-qd-v1-account-links">
+						<li>
+							<a href="/account">Minha conta</a>
+						</li>
+						<li>
+							<a href="/account/orders">Meus pedidos</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<!-- 
+		<div class="v2-vtx-tip-bar-full hidden-xs">
+			<div class="container">
+				<div class="row">
+					<vtex.cmc:tipBar />
+				</div>
+			</div>
+		</div> -->
+
+	<div class="v2-float-bar store-header-v2">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-xs-4 hidden-xs hidden-sm">
+					<h1 class="v2-nav-logo">
+						<a href="/" title="">
+							<img src="//elegancydesign.vteximg.com.br/arquivos/elegancy-design.png" alt="Elegancy Design" class="img-responsive" />
+						</a>
+					</h1>
+				</div>
+
+				<div class="col-md-3 col-xs-5">
+					<a class="header-qd-v1-float-menu-trigger">
+						<i class="fa fa-bars fa-6 color-white font-size-h1"></i>
+						Menu
+					</a>
+				</div>
+
+				<div class="col-xs-14">
+					<div class="v2-nav-searchbar">
+						<vtex.cmc:fullTextSearchBox/>
+					</div>
+				</div>
+
+				<div class="col-xs-3">
+					<div class="v2-cart-wrapper qd_cart_auto show-minicart-on-hover tpl-cart tpl-cart-dropdown">
+						<a href="/checkout/#/cart" class="cartLink">
+							<i class="fa fa-shopping-cart"></i>
+
+							<span class="qd_items_text singular hidden-xs" style="display:none;">(
+								<span class="qd_cart_qtt"></span>) Item</span>
+							<span class="qd_items_text plural hidden-xs">(
+								<span class="qd_cart_qtt"></span>) Itens</span>
+							<!-- <span class="qd_cart_total"></span> -->
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="v2-amazing-menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-24">
+						<div class="navbar navbar-default color-white bg-base-color border-radius-xs">
+
+							<div class="v2-main-amazing-menu hidden-xs hidden-sm">
+								<vtex.cmc:qdAmazingMenu />
+							</div>
+
+							<div class="qd-am-overlay"></div>
+							<div class="components-qd-v1-overlay in modal-backdrop"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
