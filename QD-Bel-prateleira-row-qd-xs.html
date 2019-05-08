@@ -1,0 +1,102 @@
+#set($id = $product.Id)
+#set($uri = $product.Uri)
+#set($escapedName = $product.HtmlEscapedName)
+#set($evaluationRate = $product.EvaluationRate)
+
+<input type="hidden" value="$product.BestPrice" class="qd_productPrice" />
+<input type="hidden" value="$product.ListPrice" class="qd_productOldPrice" />
+<input type="hidden" value="$product.NumbersOfInstallment" class="qd_sp_installments" />
+
+<div class="row shelf-product-name-content">
+	<div class="col-xs-24">
+		<h3 class="shelf-product-name">
+			<a title="$escapedName" href="$uri" class="padding-t-xxs font-size-xs">$product.Name</a>
+		</h3>
+		<!-- Yourviews estrelas -->
+        <div class="yv-review-quickreview" value="$id"></div>
+        <!-- Yourviews estrelas -->
+	</div>
+</div>
+
+<div class="row shelf-image-content">
+	<div class="col-xs-24">
+		<div class="shelf-image">
+			<div class="shelf-stamps">
+				<a title="$escapedName" class="highlightWrapper" href="$uri">
+					$product.HightLight
+					$product.DiscountHightLight
+				</a>
+			</div>
+			<a class="shelf-image-link img-responsive" title="$escapedName" href="$uri">
+				$product.GetImageTag(300,300)
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="row shelf-price-content">
+	#if ($product.IsInStock)
+	<div class="col-xs-24">
+		<div class="shelf-price">
+			<div class="shelf-price-old-price">
+				#if ($product.HasBestPrice)
+					<span class="old-price">De $product.ListPrice</span>
+				#end
+			</div>
+			<div class="shelf-price-best-price">
+				<span class="best-price">
+					$product.BestPrice
+				</span>
+			</div>
+			<div class="shelf-price-instalment">
+				#if ($product.NumbersOfInstallment > 1)
+					<span class="instalment-number">
+						${product.NumbersOfInstallment} x
+					</span>
+					<span class="instalment-value">
+						$product.InstallmentValue
+					</span>
+				#end
+			</div>
+		</div>
+	</div>
+	#end
+
+	#if ($product.IsInStock)
+	<div class="col-xs-24">
+		<div class="shelf-buy-button padding-t-xs clearfix">
+			<!-- Smart qtt -->
+			<div class="col-xs-24 col-lg-8">
+					<div class="product-qd-v1-box-quantity product-qd-v1-sku-selection-row">
+						<div class="qd-v1-smart-qtt">
+							<input class="product-qd-v1-smart-input qd-sq-quantity" type="tel" value="1" />
+				
+							<div class="btns-wrapper">
+								<span class="product-qd-v1-smart-qtt-btn qd-sq-more">
+									<i class="fa fa-plus"></i>
+								</span>
+								<span class="product-qd-v1-smart-qtt-btn qd-sq-minus">
+									<i class="fa fa-minus"></i>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Smart qtt -->
+			<div class="item-aumont" style="display:none">$product.AmountInCart</div>
+			<!-- $product.ButtonBuyModal(false,true) -->
+			$product.BottomBuyAsynchronous
+		</div>
+	</div>
+	#end
+
+	#if (!$product.IsInStock)
+	<div class="col-xs-24">
+		<div class="shelf-no-stock">
+			<a title="$escapedName" href="$uri">
+				<span class="no-stock-message">Avise-me Quando Chegar</span>
+			</a>
+		</div>
+	</div>
+	#end
+</div>
